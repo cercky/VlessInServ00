@@ -1,5 +1,3 @@
 #!/bin/bash
-
-npm install
-screen -dmS VLESS node app.js
-chmod +x start.sh
+ 
+nohup node vless/vless.js > logs/start_node.log 2>&1 &
